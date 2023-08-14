@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "MyApp"
 include(":app")
- 
+include(":core:datastore") // new android library then delete android test
