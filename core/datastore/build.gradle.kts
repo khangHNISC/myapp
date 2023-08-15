@@ -12,7 +12,6 @@ android {
     compileSdk = 33
 
     defaultConfig {
-
         consumerProguardFiles("consumer-rules.pro")
     }
 
@@ -45,6 +44,7 @@ protobuf {
 
 dependencies {
     implementation(project(":core:model"))
+    implementation(project(":core:common"))
 
     implementation(libs.androidx.dataStore.core)
     implementation(libs.hilt.android)

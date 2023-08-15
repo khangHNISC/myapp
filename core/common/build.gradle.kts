@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.myapp.core.data"
+    namespace = "com.example.myapp.core.common"
     compileSdk = 33
 
     defaultConfig {
@@ -24,16 +24,6 @@ android {
 }
 
 dependencies {
-    implementation(project(":core:datastore"))
-    implementation(project(":core:model"))
-    implementation(project(":core:common"))
-
-    implementation(libs.appcompat)
-    implementation(libs.core.ktx)
-    testImplementation(libs.junit)
     implementation(libs.hilt.android)
     kapt(libs.hilt.compiler)
-    implementation(libs.material)
-    androidTestImplementation(libs.androidx.test.ext.junit)
-    androidTestImplementation(libs.espresso.core)
 }

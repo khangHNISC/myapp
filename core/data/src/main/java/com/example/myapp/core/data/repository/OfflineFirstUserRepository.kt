@@ -1,9 +1,8 @@
 package com.example.myapp.core.data.repository
 
-import com.example.datastore.MyAppDataStore
+import com.example.myapp.core.datastore.MyAppDataStore
 import com.example.myapp.core.model.data.User
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.map
 import javax.inject.Inject
 
 class OfflineFirstUserRepository @Inject constructor(

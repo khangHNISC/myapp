@@ -1,6 +1,6 @@
 package com.example.myapp.core.data.repository.fake
 
-import com.example.datastore.MyAppDataStore
+import com.example.myapp.core.datastore.MyAppDataStore
 import com.example.myapp.core.data.repository.UserRepository
 import com.example.myapp.core.model.data.User
 import kotlinx.coroutines.flow.Flow
