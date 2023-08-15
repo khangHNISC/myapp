@@ -7,11 +7,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.myapp.core.data"
+    namespace = "com.example.myapp.core.datastore.test"
     compileSdk = 33
 
     defaultConfig {
         minSdk = 24
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     compileOptions {
@@ -24,14 +26,11 @@ android {
 }
 
 dependencies {
-    implementation(project(":core:datastore"))
-    implementation(project(":core:model"))
     implementation(project(":core:common"))
+    implementation(project(":core:datastore"))
 
-    implementation(libs.junit)
+    implementation(libs.hilt.android.testing)
+    api(libs.androidx.dataStore.core)
     implementation(libs.hilt.android)
     kapt(libs.hilt.compiler)
-    implementation(libs.kotlinx.coroutines.test)
-
-    testImplementation(project(":core:datastore-test"))
 }
