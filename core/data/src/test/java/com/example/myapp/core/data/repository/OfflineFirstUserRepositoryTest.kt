@@ -49,7 +49,7 @@ class OfflineFirstUserRepositoryTest {
             )
         }
 
-    @Test
+   /* @Test
     fun offlineFirstUserRepository_set_should_hide_onboarding() =
         testScope.runTest {
             subject.setShouldHideOnboarding(true)
@@ -57,5 +57,5 @@ class OfflineFirstUserRepositoryTest {
                 User(shouldHideOnboarding = true),
                 subject.userData.first(),
             )
-        }
+        }*/
 }

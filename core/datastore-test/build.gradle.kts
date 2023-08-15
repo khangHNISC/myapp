@@ -30,7 +30,7 @@ dependencies {
     implementation(project(":core:datastore"))
 
     implementation(libs.hilt.android.testing)
-    api(libs.androidx.dataStore.core)
+    api(libs.androidx.dataStore.core)                  //data module using this dependency, expose it for testing
     implementation(libs.hilt.android)
     kapt(libs.hilt.compiler)
 }
