@@ -3,5 +3,5 @@ option java_package = "com.example.myapp.core.datastore";
 option java_multiple_files = true;
 
 message UserPreferences {
-  int32 example_counter = 1;
+  bool should_hide_onboarding = 18;
 }

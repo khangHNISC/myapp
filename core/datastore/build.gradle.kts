@@ -8,7 +8,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.datastore"
+    namespace = "com.example.myapp.core.datastore"
     compileSdk = 33
 
     defaultConfig {
@@ -44,6 +44,7 @@ protobuf {
 }
 
 dependencies {
+    implementation(project(":core:model"))
 
     implementation(libs.androidx.dataStore.core)
     implementation(libs.hilt.android)
