@@ -49,7 +49,7 @@ jobs:
         run: ./gradlew spotlessCheck --init-script gradle/init.gradle.kts --no-configuration-cache
 
       - name: Check lint
-        run: ./gradlew lintDemoDebug
+        run: ./gradlew lintDebug
 
       - name: Run local tests
         run: ./gradlew testDebug
