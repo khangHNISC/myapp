@@ -6,7 +6,7 @@ import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
 class OfflineFirstUserRepository @Inject constructor(
-    private val dataStore: MyAppDataStore
+    private val dataStore: MyAppDataStore,
 ) : UserRepository {
     override val userData: Flow<User>
         get() = dataStore.userData

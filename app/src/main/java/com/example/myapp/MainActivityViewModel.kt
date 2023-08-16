@@ -28,4 +28,3 @@ sealed interface MainActivityUiState {
     object Loading : MainActivityUiState
     data class Success(val userData: User) : MainActivityUiState
 }
-

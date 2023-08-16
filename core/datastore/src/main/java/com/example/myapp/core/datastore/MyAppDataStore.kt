@@ -1,8 +1,6 @@
 package com.example.myapp.core.datastore
 
 import androidx.datastore.core.DataStore
-import com.example.myapp.core.datastore.UserPreferences
-import com.example.myapp.core.datastore.copy
 import com.example.myapp.core.model.data.User
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject

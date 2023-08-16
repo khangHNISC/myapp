@@ -10,7 +10,6 @@ interface UserRepository {
      */
     val userData: Flow<User>
 
-
     /**
      * Sets whether the user has completed the onboarding process.
      */

@@ -14,7 +14,6 @@ import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.TemporaryFolder
 
-
 class OfflineFirstUserRepositoryTest {
     @OptIn(ExperimentalCoroutinesApi::class)
     private val testScope = TestScope(UnconfinedTestDispatcher())
@@ -36,7 +35,6 @@ class OfflineFirstUserRepositoryTest {
             dataStore = appDataStore,
         )
     }
-
 
     @Test
     fun offlineFirstUserRepository_default_user_data_is_correct() =
