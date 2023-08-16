@@ -49,7 +49,7 @@ class OfflineFirstUserRepositoryTest {
             )
         }
 
-   /* @Test
+    /*@Test
     fun offlineFirstUserRepository_set_should_hide_onboarding() =
         testScope.runTest {
             subject.setShouldHideOnboarding(true)
