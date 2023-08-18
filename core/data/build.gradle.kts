@@ -9,12 +9,12 @@ android {
 }
 
 dependencies {
-    implementation(libs.junit)
-    implementation(libs.kotlinx.coroutines.test)
-
     implementation(project(":core:datastore"))
     implementation(project(":core:model"))
     implementation(project(":core:common"))
 
     testImplementation(project(":core:datastore-test"))
+
+    implementation(libs.junit)
+    implementation(libs.kotlinx.coroutines.test)
 }
