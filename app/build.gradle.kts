@@ -1,17 +1,14 @@
 @Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
     id("myapp.android.application")
-    alias(libs.plugins.hilt)
-    kotlin("kapt")
+    id("myapp.android.hilt")
 }
 
 android {
     namespace = "com.example.myapp"
-    compileSdk = 33
 
     defaultConfig {
         applicationId = "com.example.myapp"
-        minSdk = 24
         versionCode = 1
         versionName = "1.0"
 
@@ -30,16 +27,11 @@ android {
             )
         }
     }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
-    }
-    kotlinOptions {
-        jvmTarget = "17"
-    }
+
     buildFeatures {
         compose = true
     }
+
     composeOptions {
         kotlinCompilerExtensionVersion = "1.4.3"
     }
@@ -65,8 +57,6 @@ dependencies {
     implementation(libs.activity.compose)
     implementation(platform(libs.compose.bom))
     implementation(libs.core.ktx)
-    implementation(libs.hilt.android)
-    kapt(libs.hilt.compiler)
     implementation(libs.lifecycle.runtime.ktx)
     implementation(libs.material3)
     implementation(libs.material)
