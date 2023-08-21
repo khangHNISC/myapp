@@ -28,6 +28,17 @@ android {
         }
     }
 
+    flavorDimensions += "version"
+    productFlavors {
+        create("demo") {
+            applicationIdSuffix = ".demo"
+        }
+
+        create("prod") {
+            applicationIdSuffix = ".prod"
+        }
+    }
+
     buildFeatures {
         compose = true
     }

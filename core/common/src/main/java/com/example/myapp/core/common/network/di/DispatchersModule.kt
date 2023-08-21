@@ -9,6 +9,9 @@ import dagger.hilt.components.SingletonComponent
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 
+/**
+ * provide multiple bindings of Coroutine Dispatcher
+ */
 @Module
 @InstallIn(SingletonComponent::class)
 object DispatchersModule {

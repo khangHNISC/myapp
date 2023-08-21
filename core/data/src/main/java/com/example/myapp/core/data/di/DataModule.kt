@@ -10,6 +10,9 @@ import dagger.hilt.components.SingletonComponent
 @Module
 @InstallIn(SingletonComponent::class)
 interface DataModule {
+    /**
+     * inject interface instances for user repository
+     */
     @Binds
     fun bindsUserRepository(
         userDataRepository: OfflineFirstUserRepository,
