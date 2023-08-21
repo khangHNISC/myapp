@@ -10,6 +10,7 @@
 /build-logic/convention/build/
 .DS_Store
 /build
+/core/build/
 /captures
 .externalNativeBuild
 .cxx
