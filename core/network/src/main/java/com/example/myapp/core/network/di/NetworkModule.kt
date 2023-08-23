@@ -2,7 +2,6 @@ package com.example.myapp.core.network.di
 
 import android.content.Context
 import com.example.myapp.core.network.fake.FakeAssetManager
-import com.example.myapp.core.network.fake.FakeNetworkDataSource
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -23,6 +22,6 @@ object NetworkModule {
     @Provides
     @Singleton
     fun providesFakeAssetManager(
-        @ApplicationContext context: Context
+        @ApplicationContext context: Context,
     ): FakeAssetManager = FakeAssetManager(context.assets::open)
 }

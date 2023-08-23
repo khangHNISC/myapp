@@ -5,7 +5,7 @@ import java.io.InputStream
 import java.util.Properties
 
 @VisibleForTesting
-internal object JVMUnitTestFakeAssetManager: FakeAssetManager {
+internal object JVMUnitTestFakeAssetManager : FakeAssetManager {
 
     private val config =
         requireNotNull(javaClass.getResource("com/android/tools/test_config.properties")) {

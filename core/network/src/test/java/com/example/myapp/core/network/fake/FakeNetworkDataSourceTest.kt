@@ -9,7 +9,6 @@ import org.junit.Before
 import org.junit.Test
 import kotlin.test.assertEquals
 
-
 class FakeNetworkDataSourceTest {
     private lateinit var subject: FakeNetworkDataSource
 
@@ -20,7 +19,7 @@ class FakeNetworkDataSourceTest {
         subject = FakeNetworkDataSource(
             ioDispatcher = testDispatcher,
             networkJson = Json { ignoreUnknownKeys = true },
-            assets = JVMUnitTestFakeAssetManager
+            assets = JVMUnitTestFakeAssetManager,
         )
     }
 
@@ -28,9 +27,12 @@ class FakeNetworkDataSourceTest {
     fun testDeserializeOfUsers() = runTest(testDispatcher) {
         assertEquals(
             UserPresentation(
-                1, "Leanne Graham", "Sincere@april.biz", "1-770-736-8031 x56442"
+                1,
+                "Leanne Graham",
+                "Sincere@april.biz",
+                "1-770-736-8031 x56442",
             ),
-            subject.getAllUsers().first()
+            subject.getAllUsers().first(),
         )
     }
 }
