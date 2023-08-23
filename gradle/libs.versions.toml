@@ -8,14 +8,13 @@ core-ktx = "1.10.1"
 espresso-core = "3.5.1"
 junit = "4.13.2"
 hilt = "2.47"
+kotlin = "1.9.0"
 kotlinxCoroutines = "1.7.3"
+kotlinxSerializationJson = "1.5.1"
 lifecycle-runtime-ktx = "2.6.1"
-org-jetbrains-kotlin-jvm = "1.9.0"
-org-jetbrains-kotlin-android = "1.9.0"
+material = "1.9.0"
 protobuf = "3.24.1"
 protobufPlugin = "0.9.4"
-material = "1.9.0"
-appcompat = "1.6.1"
 
 [libraries]
 activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity-compose" }
@@ -30,6 +29,7 @@ hilt-android-testing = { group = "com.google.dagger", name = "hilt-android-testi
 hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
 kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinxCoroutines" }
 kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinxCoroutines" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
 lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 material3 = { group = "androidx.compose.material3", name = "material3" }
@@ -44,15 +44,15 @@ ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 
 # Dependencies of the included build-logic
 android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
-kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "org-jetbrains-kotlin-android" }
-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 
 [plugins]
 android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
 com-android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
-org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
-org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "org-jetbrains-kotlin-jvm" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 protobuf = { id = "com.google.protobuf", version.ref = "protobufPlugin" }
 
 [bundles]

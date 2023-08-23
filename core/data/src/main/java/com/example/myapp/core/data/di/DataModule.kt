@@ -14,7 +14,5 @@ interface DataModule {
      * inject interface instances for user repository
      */
     @Binds
-    fun bindsUserRepository(
-        userDataRepository: OfflineFirstUserRepository,
-    ): UserRepository
+    fun OfflineFirstUserRepository.binds(): UserRepository
 }
