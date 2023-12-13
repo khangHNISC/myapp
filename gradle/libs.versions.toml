@@ -1,5 +1,5 @@
 [versions]
-activity-compose = "1.7.2"
+activity-compose = "1.8.2"
 androidGradlePlugin = "8.1.1"
 androidxDataStore = "1.0.0"
 androidx-test-ext-junit = "1.1.5"
