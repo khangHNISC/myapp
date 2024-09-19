@@ -13,7 +13,7 @@ kotlinxCoroutines = "1.7.3"
 kotlinxSerializationJson = "1.6.0"
 lifecycle-runtime-ktx = "2.6.1"
 material = "1.9.0"
-protobuf = "3.24.1"
+protobuf = "3.25.5"
 protobufPlugin = "0.9.4"
 
 [libraries]
